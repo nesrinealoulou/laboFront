@@ -1,0 +1,104 @@
+<mat-card class="p-0">
+    <mat-card-title class="">
+        <div class="card-title-text">
+            <span>Add a member</span>
+        </div>
+        <mat-divider></mat-divider>
+    </mat-card-title>
+    <mat-card-content>
+        <form [formGroup]="form" #editForm="ngForm" novalidate>
+            <div fxLayout="row" fxLayoutAlign="space-around center">
+                <div class="pb-16">
+                    <mat-form-field class="full-width" appearance="outline">
+                        <mat-label>FirstName</mat-label>
+                        <input
+                                matInput
+                                name="firstName"
+                                formControlName="firstName"
+                                placeholder="First Name"
+                                value="">
+                    </mat-form-field>
+                </div>
+                <div class="pb-16">
+
+                    <mat-form-field class="full-width" appearance="outline">
+                        <mat-label>LastName</mat-label>
+                        <input
+                                matInput
+                                name="lastName"
+                                formControlName="lastName"
+                                placeholder="Last Name"
+                                value="">
+                    </mat-form-field>
+                </div>
+                <div class="pb-16">
+
+                    <mat-form-field class="full-width" appearance="outline">
+                        <mat-label>Cin</mat-label>
+                        <input
+                                matInput
+                                name="cin"
+                                formControlName="cin"
+                                placeholder="Cin"
+                                value="">
+                    </mat-form-field>
+                </div>
+            </div>
+            <div fxLayout="row" fxLayoutAlign="space-around center">
+                <div class="pb-16">
+                    <mat-form-field class="full-width" appearance="outline">
+                        <mat-label>Cv</mat-label>
+                        <input
+                                matInput
+                                name="cv"
+                                formControlName="cv"
+                                placeholder="Cv"
+                                value="">
+                    </mat-form-field>
+                </div>
+                <div class="pb-16">
+
+                    <mat-form-field class="full-width" appearance="outline">
+                        <mat-label>Email</mat-label>
+                        <input
+                                matInput
+                                name="email"
+                                formControlName="email"
+                                placeholder="Email"
+                                value="">
+                    </mat-form-field>
+                </div>
+                <div class="pb-16">
+
+                    <mat-form-field class="full-width" appearance="outline">
+                        <mat-label>Password</mat-label>
+                        <input
+                                matInput
+                                name="password"
+                                formControlName="password1"
+                                placeholder="Password"
+                                value="">
+                    </mat-form-field>
+                </div>
+            </div>
+            <div fxLayout="row" fxLayoutAlign="space-around center">
+                <div class="pb-16" style="width:100%">
+                    <mat-form-field class="datepicker full-width"  appearance="outline">
+                        <input matInput [matDatepicker]="picker"  formControlName="date"placeholder="Choose a date">
+                        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                        <mat-datepicker #picker></mat-datepicker>
+                    </mat-form-field>
+                </div>
+            </div>
+            <div fxLayout="row" fxLayoutAlign="space-around center">
+                <div class="pb-16" style="width:100%">
+                    <button class="submit" style="width:100% ; background-color: rgba(92,97,161,0.25)" mat-raised-button >Submit</button>
+                </div>
+            </div>
+
+
+
+
+        </form>
+    </mat-card-content>
+</mat-card>

@@ -1,0 +1,44 @@
+<div fxLayout="row wrap">
+    <div fxFlex="100" fxFlex.gt-md="300px" fxFlex.gt-sm="50">
+        <mat-card class="profile-sidebar mb-16 pb-0">
+            <div class="propic text-center">
+                <img src="assets/images/face-7.jpg" alt="">
+            </div>
+            <div class="profile-title text-center mb-16">
+                <div class="main-title">Nessrine aloulou</div>
+                <div class="subtitle mb-8">Nessrine.aloulou@enis.tn</div>
+                <div class="subtitle mb-8">Date d'addition : 2022-07-29</div>
+            </div>
+            <div class="profile-nav">
+                <mat-nav-list>
+                    <mat-list-item routerLink="/profile/overview" routerLinkActive="list-item-active">
+                        <mat-icon>home</mat-icon>
+                        Overview
+                    </mat-list-item>
+                    <mat-divider></mat-divider>
+                    <mat-list-item routerLink="/profile/settings" routerLinkActive="list-item-active">
+                        <mat-icon>settings</mat-icon>
+                        Settings
+                    </mat-list-item>
+                </mat-nav-list>
+            </div>
+        </mat-card>
+        <!-- Contact Information -->
+        <mat-card class="default">
+            <mat-card-title>Contact Information</mat-card-title>
+            <mat-card-content class="pt-0">
+                <mat-list>
+                    <mat-list-item><mat-icon class="mr-16">public</mat-icon>contact@beprimetech.com</mat-list-item>
+                    <mat-list-item><mat-icon class="mr-16">email</mat-icon> Nessrine.aloulou@enis.tn</mat-list-item>
+                    <mat-list-item><mat-icon class="mr-16">phone</mat-icon>27479797</mat-list-item>
+                    <mat-list-item><mat-icon class="mr-16">add_location</mat-icon> sfax, ain, 3042</mat-list-item>
+                </mat-list>
+            </mat-card-content>
+        </mat-card>
+    </div>
+
+    <!-- Profile Views -->
+    <div fxFlex="100" fxFlex.gt-sm="50" fxFlex.gt-md="calc(100% - 300px)">
+        <router-outlet></router-outlet>
+    </div>
+</div>
